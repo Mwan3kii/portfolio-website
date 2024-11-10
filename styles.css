@@ -183,7 +183,7 @@ body {
 
 .btn:hover {
     background-color: #36B37F;
-    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);;
+    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
 }
 
 .btn:active {
@@ -193,11 +193,64 @@ body {
 
 .about-section {
     display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    position: relative;
 }
-.about-section img {
-    display: flex;
-    justify-content: end;
-}
+
 .about-section h2 {
-    margin-left: 5em;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #172B4D;
+    padding-top: 1em;
+}
+
+.about-section p {
+    font-size: 1.3em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Inter', sans-serif;
+    color: #42526E;
+}
+
+.decor {
+    position: absolute;
+    width: 90px;
+    height: auto;
+}
+
+.top-right {
+    right: -10px;
+}
+
+.bottom-left {
+    bottom: -10px;
+    left: -10px;
+}
+
+.resume-btn {
+    background-color: #36B37F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    padding: 18px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+.resume-btn:hover {
+    background-color: #36B37F;
+    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
+}
+
+/* Button active effect */
+.resume-btn:active {
+    background-color: #008552;
+    transform: scale(0.98);
 }
