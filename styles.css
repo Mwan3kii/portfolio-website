@@ -1,6 +1,7 @@
-html,body {
-    margin:0;
-    padding:0;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 .top-menu {
@@ -34,7 +35,7 @@ html,body {
 .menu-title {
     font-size: 1.9em;
     font-weight: 700;
-    font-family: 'Inter', sans-serif ;
+    font-family: 'Inter', sans-serif;
     color: #172B4D;
     padding-top: 1em;
     text-align: center;
@@ -53,7 +54,7 @@ html,body {
     font-size: 2.5em;
     font-weight: 700;
     text-align: center;
-    font-family: 'Inter', sans-serif ;
+    font-family: 'Inter', sans-serif;
     color: #172B4D;
     padding-top: 2em;
 }
@@ -62,7 +63,7 @@ html,body {
     font-size: 2.0em;
     font-weight: 700;
     text-align: center;
-    font-family: 'Inter', sans-serif ;
+    font-family: 'Inter', sans-serif;
     color: #36B37E;
 
 }
@@ -71,7 +72,7 @@ html,body {
     font-size: 1.5em;
     font-weight: 700;
     text-align: center;
-    font-family: 'Inter', sans-serif ;
+    font-family: 'Inter', sans-serif;
     color: #172B4D;
 
 }
@@ -81,7 +82,7 @@ html,body {
     font-weight: 700;
     text-align: center;
     line-height: 1.5em;
-    font-family: 'Inter', sans-serif ;
+    font-family: 'Inter', sans-serif;
     color: #172B4D;
 }
 
@@ -108,4 +109,95 @@ html,body {
     margin-top: 2.5em;
     border: none;
     background-color: white;
+}
+
+.projects-title {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #172B4D;
+}
+
+.card-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 18.75em;
+    height: 80vh;
+    border: 1px solid #ddd;
+    border-radius: 0.5em;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    margin: 1em;
+}
+
+.card-image {
+    width: 100%;
+    height: 14.375em;
+    background-color: #e0e0e0;
+}
+
+.card-content {
+    padding: 0.625em;
+}
+
+.card-content h3 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #3A4A42;
+}
+
+
+.tags {
+    display: flex;
+    gap: 0.5em;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.tag {
+    background-color: #EBF0EE;
+    padding: 6px 7px;
+    border-radius: 4px;
+    font-size: 10px;
+    color: #3A4A42;
+    font-weight: 600;
+}
+
+.btn {
+    background-color: #36B37F;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #36B37F;
+    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);;
+}
+
+.btn:active {
+    background-color: #008552;
+    transform: scale(0.98);
+}
+
+.about-section {
+    display: flex;
+}
+.about-section img {
+    display: flex;
+    justify-content: end;
+}
+.about-section h2 {
+    margin-left: 5em;
 }
