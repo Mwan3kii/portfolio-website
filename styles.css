@@ -1,0 +1,111 @@
+html,body {
+    margin:0;
+    padding:0;
+}
+
+.top-menu {
+    display: flex;
+    justify-content: end;
+    padding-right: 1em;
+    margin-top: 0.5em;
+}
+
+.menu-bar {
+    width: 2.5em;
+}
+
+.menu-page {
+    display: block;
+    flex-direction: column;
+}
+
+.x-icon {
+    font-size: 1.8em;
+    color: #505F79;
+}
+
+.top-x {
+    display: flex;
+    justify-content: end;
+    padding-right: 2em;
+    margin-top: 1.5em;
+}
+
+.menu-title {
+    font-size: 1.9em;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif ;
+    color: #172B4D;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.cover-image {
+    background-image: url('assets/images/header-illsutration-mobile@2x.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    width: 100%;
+}
+
+.heading-1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Inter', sans-serif ;
+    color: #172B4D;
+    padding-top: 2em;
+}
+
+.heading-2 {
+    font-size: 2.0em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Inter', sans-serif ;
+    color: #36B37E;
+
+}
+
+.heading-3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Inter', sans-serif ;
+    color: #172B4D;
+
+}
+
+.introduction {
+    font-size: 1.0em;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Inter', sans-serif ;
+    color: #172B4D;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    color: #505F79;
+}
+
+.social-icon {
+    padding: 0.6em;
+    margin-top: 1em;
+    color: #505F79;
+    font-size: 1.5em;
+}
+
+.social-icon:hover {
+    color: #36B37F3D;
+}
+
+.down-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5em;
+    border: none;
+    background-color: white;
+}
