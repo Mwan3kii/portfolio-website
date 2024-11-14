@@ -7,25 +7,41 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/script.js"></script>
     <title>Agatha Mwaniki</title>
 </head>
 
 <body>
     <div class="top-section">
         <div class="top-menu">
-            <img class="menu-bar" src="assets/images/Icon - Menu.png" alt="menu">
+            <img class="menu-bar" src="assets/images/Icon - Menu.png" alt="menu" onclick="mobileMenu()">
+            <div class="top-x">
+                <i class="fas fa-times x-icon" onclick="mobileMenu()"></i>
+            </div>
         </div>
         <ul class="desktop-menu">
             <li>Portfolio</li>
             <li>About</li>
             <li>Contact</li>
         </ul>
+        <section id="menu-page">
+            <a href="#portfolio_section" onclick="mobileMenu()">
+                <h1 class="menu-title">Portfolio</h1>
+            </a>
+            <a href="#about_section" onclick="mobileMenu()">
+                <h1 class="menu-title">About</h1>
+            </a>
+            <a href="#contact_section" onclick="mobileMenu()">
+                <h1 class="menu-title">Contact</h1>
+            </a>
+        </section>
         <section>
             <div class="cover-image">
                 <h1 class="heading-1">Hey there.<span>I’m Agatha Mwaniki.</span></h1>
                 <h1 class="heading-3">I’m Agatha Mwaniki.</h1>
                 <h2 class="heading-2"> I’m a software developer</h2>
-                <p class="introduction"> I can help you build a product , feature or website. Look through some of my
+                <p class="introduction"> I can help you build a product , feature or website. Look through some of
+                    my
                     work
                     and experience! If you
                     like what you see and have a project you need coded,
@@ -48,77 +64,80 @@
         </section>
     </div>
 
-    <section>
+    <section id="portfolio_section">
+        <div id="popWindow"></div>
         <h1 class="projects-title">My Recent Works</h1>
-        <div class="card-section">
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h3>Multi-Post Stories Gain+Glory</h3>
-                    <div class="tags">
-                        <span class="tag">Ruby on Rails</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML</span>
+        <div class="projects">
+            <div class="card-section">
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Multi-Post Stories Gain+Glory</h3>
+                        <div class="tags">
+                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                        <button class="btn">See project</button>
                     </div>
-                    <button class="btn">See project</button>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h3>Multi-Post Stories Gain+Glory</h3>
-                    <div class="tags">
-                        <span class="tag">Ruby on Rails</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML</span>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Multi-Post Stories Gain+Glory</h3>
+                        <div class="tags">
+                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                        <button class="btn">See project</button>
                     </div>
-                    <button class="btn">See project</button>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h3>Multi-Post Stories Gain+Glory</h3>
-                    <div class="tags">
-                        <span class="tag">Ruby on Rails</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML</span>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Multi-Post Stories Gain+Glory</h3>
+                        <div class="tags">
+                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                        <button class="btn">See project</button>
                     </div>
-                    <button class="btn">See project</button>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h3>Multi-Post Stories Gain+Glory</h3>
-                    <div class="tags">
-                        <span class="tag">Ruby on Rails</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML</span>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Multi-Post Stories Gain+Glory</h3>
+                        <div class="tags">
+                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                        <button class="btn">See project</button>
                     </div>
-                    <button class="btn">See project</button>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <h3>Multi-Post Stories Gain+Glory</h3>
-                    <div class="tags">
-                        <span class="tag">Ruby on Rails</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
-                        <span class="tag">HTML</span>
+                <div class="card">
+                    <div class="card-image"></div>
+                    <div class="card-content">
+                        <h3>Multi-Post Stories Gain+Glory</h3>
+                        <div class="tags">
+                            <span class="tag">Ruby on Rails</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">HTML</span>
+                        </div>
+                        <button class="btn">See project</button>
                     </div>
-                    <button class="btn">See project</button>
                 </div>
             </div>
         </div>
     </section>
-    <section>
+    <section id="about_section">
         <div class="image-section">
             <img src="assets/images/Frame.svg" class="decor1 top-right" alt="about-me">
             <img src="assets/images/illustration-about-me-2-desktop@2x.png" class="decor2 bottom-left" alt="about-me">
@@ -173,46 +192,49 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="contact-section">
-            <div class="bottom-images">
-                <img src="assets/images/bottom1.png" class="img1 bottom-right" alt="bottom-images">
-                <img src="assets/images/bottom2.png" class="img2 bottom-middle" alt="bottom-images">
-                <img src="assets/images/bottom3.png" class="img3 b-left" alt="bottom-images">
-            </div>
-            <h3 class="contact-h3">I'm always interested in hearing about new projects, so if you'd like to chat please
-                get in
-                touch.
-            </h3>
-            <div class="form-container">
-                <form>
-                    <input type="text" class="mobile-input" id="name" name="name" placeholder="Full name" required>
-                    <div class="desktop-input">
-                        <input type="text" id="name" name="name" placeholder="First name" required>
-                        <input type="text" id="name" name="name" placeholder="Last name" required>
+    <section id="contact_section">
+        <div class="contact">
+            <div class="contact-section">
+                <div class="bottom-images">
+                    <img src="assets/images/bottom1.png" class="img1 bottom-right" alt="bottom-images">
+                    <img src="assets/images/bottom2.png" class="img2 bottom-middle" alt="bottom-images">
+                    <img src="assets/images/bottom3.png" class="img3 b-left" alt="bottom-images">
+                </div>
+                <h3 class="contact-h3">I'm always interested in hearing about new projects, so if you'd like to chat
+                    please
+                    get in
+                    touch.
+                </h3>
+                <div class="form-container">
+                    <form>
+                        <input type="text" class="mobile-input" id="name" name="name" placeholder="Full name" required>
+                        <div class="desktop-input">
+                            <input type="text" id="name" name="name" class="d-input" placeholder="First name" required>
+                            <input type="text" id="name" name="name" class="d-input" placeholder="Last name" required>
+                        </div>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Email Address" required>
+
+                        <textarea id="message" name="message" rows="4" class="form-textarea" placeholder="Hey I’d like to connect to..."
+                            required></textarea>
+
+                        <button type="submit" class="submit-btn">Get in Touch</button>
+                    </form>
+                    <p class="email">agathawanja303@gmail.com</p>
+                    <div class="bottom-socials">
+                        <a href="https://github.com/Mwan3kii" target="_blank">
+                            <i class="fab fa-github social-icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/agatha-mwaniki/">
+                            <i class="fab fa-linkedin social-icon"></i>
+                        </a>
+                        <i class="fab fa-medium social-icon"></i>
+                        <i class="fab fa-twitter social-icon"></i>
                     </div>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
-
-                    <textarea id="message" name="message" rows="4" placeholder="Hey I’d like to connect to..."
-                        required></textarea>
-
-                    <button type="submit" class="submit-btn">Get in Touch</button>
-                </form>
-                <p class="email">agathawanja303@gmail.com</p>
-                <div class="bottom-socials">
-                    <a href="https://github.com/Mwan3kii" target="_blank">
-                        <i class="fab fa-github social-icon"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/agatha-mwaniki/">
-                        <i class="fab fa-linkedin social-icon"></i>
-                    </a>
-                    <i class="fab fa-medium social-icon"></i>
-                    <i class="fab fa-twitter social-icon"></i>
                 </div>
             </div>
         </div>
         <div>
-            <hr class="break-point"/>
+            <hr class="break-point" />
             <div class="desktop-socials">
                 <a href="https://github.com/Mwan3kii" target="_blank">
                     <i class="fab fa-github icon"></i>
