@@ -47,6 +47,36 @@ function showPopup() {
     titleSection.appendChild(mainProjectTitle);
     secondaryPopupDiv.appendChild(imageDiv);
     secondaryPopupDiv.appendChild(titleSection);
+
+    // desktop button section
+    const desktopDiv = document.createElement('div');
+    desktopDiv.classList.add('d-title');
+    const desktopTitle = document.createElement('h2');
+    desktopTitle.classList.add('desktop-title');
+    desktopTitle.innerText = "Keeping track of hundreds of components"
+
+    desktopDiv.appendChild(desktopTitle);
+
+    const btnDiv = document.createElement('div');
+    btnDiv.classList.add('d-btns')
+    const liveBtn = document.createElement('button');
+    liveBtn.classList.add('popup-btn');
+    liveBtn.innerText = "See live";
+    const liveIcn = document.createElement('i');
+    liveIcn.classList.add('fas', 'fa-broadcast-tower');
+    liveBtn.appendChild(liveIcn);
+    const sourceBtn = document.createElement('button');
+    sourceBtn.classList.add('popup-btn');
+    sourceBtn.innerText = "See Source";
+    const sourceIcn = document.createElement('i');
+    sourceIcn.classList.add('fab', 'fa-github');
+    sourceBtn.appendChild(sourceIcn);
+    btnDiv.appendChild(liveBtn);
+    btnDiv.appendChild(sourceBtn);
+
+    desktopDiv.appendChild(btnDiv);
+    secondaryPopupDiv.appendChild(desktopDiv);
+
     const tagsSpan = document.createElement('div');
     tagsSpan.classList.add('popup-tags');
     const tag1 = document.createElement('span');
@@ -68,22 +98,25 @@ function showPopup() {
     secondaryPopupDiv.appendChild(description);
     const buttonDiv = document.createElement('div');
     buttonDiv.classList.add('popup-btns')
-    const LiveButton = document.createElement('button');
-    LiveButton.classList.add('popup-btn');
-    LiveButton.innerText = "See live";
+    const liveButton = document.createElement('button');
+    liveButton.classList.add('popup-btn');
+    liveButton.innerText = "See live";
     const liveIcon = document.createElement('i');
     liveIcon.classList.add('fas', 'fa-broadcast-tower');
-    LiveButton.appendChild(liveIcon);
-    const SourceButton = document.createElement('button');
-    SourceButton.classList.add('popup-btn');
-    SourceButton.innerText = "See Source";
-    const SourceIcon = document.createElement('i');
-    SourceIcon.classList.add('fab', 'fa-github');
-    SourceButton.appendChild(SourceIcon);
-    buttonDiv.appendChild(LiveButton);
-    buttonDiv.appendChild(SourceButton);
+    liveButton.appendChild(liveIcon);
+    const sourceButton = document.createElement('button');
+    sourceButton.classList.add('popup-btn');
+    sourceButton.innerText = "See Source";
+    const sourceIcon = document.createElement('i');
+    sourceIcon.classList.add('fab', 'fa-github');
+    sourceButton.appendChild(sourceIcon);
+    buttonDiv.appendChild(liveButton);
+    buttonDiv.appendChild(sourceButton);
     secondaryPopupDiv.appendChild(buttonDiv);
     
+
+    
+
     return mainPopupDiv;
 }
 

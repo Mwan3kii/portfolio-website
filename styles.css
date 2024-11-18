@@ -267,11 +267,6 @@
     color: #505F79;
   }
 
-  .menu-page {
-    display: block;
-    flex-direction: column;
-  }
-
   .x-icon {
     font-size: 1.8em;
     color: #505F79;
@@ -447,7 +442,7 @@
   }
 
   .popup_content {
-    height: 119vh;
+    height: 85vh;
     margin: 1.5em;
   }
 
@@ -516,6 +511,14 @@
     top: 10px;       /* Position from the top of the container */
     left: 10px;
   }
+
+  .desktop-title {
+    display: none;
+  }
+
+  .d-title {
+    display: none;
+  }
 }
 
 @media (min-width: 769px) {
@@ -525,8 +528,16 @@
     background-color: transparent;
   }
 
-  .menu-bar {
+  #menu-page {
     display: none;
+  }
+
+  .top-x {
+    display: none;
+  }
+
+  .menu-bar {
+    display: none !important;
   }
 
   .top-section {
@@ -1029,7 +1040,7 @@
   }
 
   .popup_content {
-    height: 110vh;
+    height: 105vh;
     margin: 2.5em;
     margin-top: 1em;
   }
@@ -1041,12 +1052,20 @@
   }
 
   .project-title {
+    display: none;
+  }
+
+  .desktop-title {
     font-size: 2.0em;
     font-weight: 800;
     font-family: 'Inter', sans-serif;
     color: #172B4D;
     padding-top: 0.5em;
     padding-bottom: 0.3em;
+  }
+
+  .d-title {
+    display: flex;
   }
 
   .popup-tags {
@@ -1077,18 +1096,23 @@
     color: #FFFFFF;
     border: none;
     border-radius: 4px;
-    padding: 11px 20px;
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
     margin-top: 5px;
     gap: 10px;
     display: flex;
+    padding: 9px 17px;
+  }
+
+  .d-btns {
+    display: flex;
+    gap: 10px;
+    height: 8vh;
   }
 
   .popup-btns {
-    display: flex;
-    gap: 10px;
+    display: none;
   }
 
   .x-icon {
