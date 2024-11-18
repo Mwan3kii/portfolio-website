@@ -434,16 +434,46 @@
   }
 
   .popup {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    border: 1px solid #ddd;
-    border-radius: 0.5em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10%;
+    overflow: auto;
+    align-items: center;
+    width: 100vw;
+    display: hidden;
   }
 
   .popup_content {
-    height: 85vh;
-    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fff;
+  }
+
+  .close_button {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    top: 10px;
+    right: 20px;
+  }
+  #popup_img {
+    position: relative;
+  }
+  .desktop_close_button {
+    display: none;
+  }
+
+  .main_img {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px 8px 0 0;
   }
 
   .project-title {
@@ -561,12 +591,12 @@
   }
 
   .heading-1 {
-    font-size: 2em;
-    font-weight: 800;
+    font-size: 2.2em;
+    font-weight: 900;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #172B4D;
-    padding-top: 3em;
+    padding-top: 3.5em;
     padding-bottom: 0.5em;
   }
 
@@ -576,8 +606,8 @@
 
   .heading-2 {
     font-family: Inter, sans-serif;
-    font-weight: 800;
-    font-size: 1.5em;
+    font-weight: 900;
+    font-size: 2.0em;
     letter-spacing: 0.023125em;
     text-align: center;
     color: #36B37E;
@@ -585,12 +615,13 @@
   }
 
   .introduction {
-    font-size: 1.2em;
+    font-size: 1.0em;
     font-weight: 400;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #172B4D;
     line-height: 2em;
+    width: 700px;
   }
 
   .cover-image {
@@ -614,11 +645,12 @@
 
   .projects-title {
     font-size: 2em;
-    font-weight: 800;
+    font-weight: 900;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #172B4D;
-    padding-top: 5em;
+    padding-top: 4em;
+    padding-bottom: 1em;
   }
 
   .projects {
@@ -635,7 +667,7 @@
 
   .card {
     width: 18.75em;
-    height: 66vh;
+    height: 59vh;
     border: 1px solid #ddd;
     border-radius: 0.5em;
     overflow: hidden;
@@ -716,7 +748,7 @@
     position: relative;
     width: 700px;
     height: 50vh;
-    margin-top: 60px;
+    margin-top: 65px;
   }
 
   .about-section h2 {
@@ -810,7 +842,7 @@
 
   .bottom-card {
     width: 18.75em;
-    height: 62vh;
+    height: 54vh;
     border: 1px solid #ddd;
     border-radius: 0.5em;
     overflow: hidden;
@@ -1031,24 +1063,47 @@
   }
 
   .popup {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: end;
-    border: 1px solid #ddd;
-    border-radius: 0.5em;
-    width: 800px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 112px;
+    padding-bottom: 127px;
+    overflow: auto;
+    width: 100vw;
+    display: none;
+  }
+
+  .main_img {
+    width: 100%;
+    height: 616px;
+  }
+
+  .close_button {
+    display: none;
+  }
+
+  .desktop_close_button {
+    width: 40px;
+    height: 40px;
   }
 
   .popup_content {
-    height: 105vh;
-    margin: 2.5em;
-    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fff;
   }
 
-  .popup-img {
-    width: 100%;
-    height: 70vh;
-    border-radius: 5px;
+  #popup_img {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .project-title {
@@ -1123,6 +1178,11 @@
   }
   
   .contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .introduction-div {
     display: flex;
     justify-content: center;
   }
