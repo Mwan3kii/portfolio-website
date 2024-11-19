@@ -157,7 +157,7 @@
 
   .btn:hover {
     background-color: #36b37f;
-    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
+    box-shadow: 0 8px 12px rgba(153, 241, 174, 0.5);
   }
 
   .btn:active {
@@ -234,7 +234,7 @@
   /* Button hover effect */
   .resume-btn:hover {
     background-color: #36b37f;
-    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
+    box-shadow: 0 8px 12px rgba(153, 241, 174, 0.5);
   }
 
   /* Button active effect */
@@ -400,7 +400,7 @@
   /* Button hover effect */
   .submit-btn:hover {
     background-color: #36b37f;
-    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
+    box-shadow: 0 8px 12px rgba(153, 241, 174, 0.5);
   }
 
   .contact-section {
@@ -712,7 +712,7 @@
 
   .btn:hover {
     background-color: #36b37f;
-    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
+    box-shadow: 0 8px 12px rgba(153, 241, 174, 0.5);
   }
 
   .btn:active {
@@ -795,7 +795,7 @@
   /* Button hover effect */
   .resume-btn:hover {
     background-color: #36b37f;
-    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
+    box-shadow: 0 8px 12px rgba(153, 241, 174, 0.5);
   }
 
   /* Button active effect */
@@ -954,7 +954,7 @@
 
   .submit-btn:hover {
     background-color: #36b37f;
-    box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
+    box-shadow: 0 8px 12px rgba(153, 241, 174, 0.5);
   }
 
   .submit-btn:active {
@@ -1158,7 +1158,7 @@
     height: 30px;
     width: 70px;
   }
-  
+
   .contact {
     display: flex;
     justify-content: center;
