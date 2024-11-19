@@ -5,7 +5,7 @@ const projectInfo = [
         projectInfo:
             'A daily tracking of privately personalized activities; no accounts or sign-ups required.',
         tech: ['HTML', 'CSS', 'Javascript'],
-        img: 'projects/center_back.png',
+        img: 'assets/images/Snapshot Portfolio.jpg',
     },
     {
         id: 2,
@@ -13,7 +13,7 @@ const projectInfo = [
         projectInfo:
             "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
         tech: ['HTML', 'Bootstrap', 'Ruby'],
-        img: 'projects/center_back.png',
+        img: 'assets/images/center_back.png',
     },
     {
         id: 3,
@@ -21,7 +21,7 @@ const projectInfo = [
         projectInfo:
             "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
         tech: ['HTML', 'Bootstrap', 'Ruby'],
-        img: 'projects/center_back.png',
+        img: 'assets/images/center_back.png',
     },
     {
         id: 4,
@@ -44,7 +44,7 @@ const projectInfo = [
         projectName: 'Website Portfolio',
         projectInfo:
             "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        tech: ['HTML', 'Bootstrap', 'Ruby'],
+        tech: ['HTML', 'CSS', 'Ruby'],
         img: 'projects/center_back.png',
     },
 ];
@@ -169,26 +169,33 @@ function showDynamicproject() {
         const mainCard = document.createElement('div');
         mainCard.classList.add('card');
         const cardImage = document.createElement('div');
-        cardImage.classList.add('card-image')
+        cardImage.classList.add('card-image');
+        const img = document.createElement('img');
+        img.src = item.img;
+        img.alt = item.projectName;
+        cardImage.appendChild(img);
+        mainCard.appendChild(cardImage);
         const cardContent = document.createElement('div');
         cardContent.classList.add('card-content');
         mainCard.appendChild(cardImage);
         mainCard.appendChild(cardContent);
         const heading = document.createElement('h3');
         heading.innerText = `${item.projectName}`;
-        const Tags = document.createElement('div');
-        Tags.classList.add('tags');
         cardContent.appendChild(heading);
-        cardContent.appendChild(Tags);
-        const spanTag = document.createElement('span');
-        spanTag.classList.add('tag');
-        spanTag.innerText = 'JavaScript';
+        const tags = document.createElement('div');
+        tags.classList.add('tags');
+        item.tech.forEach((tech) => {
+            const spanTag = document.createElement('span');
+            spanTag.classList.add('tag');
+            spanTag.innerText = tech;
+            tags.appendChild(spanTag);
+        });
+        cardContent.appendChild(tags);
         const popupButton = document.createElement('button');
         popupButton.setAttribute('class', 'btn');
         popupButton.setAttribute('type', 'button');
-        popupButton.setAttribute('onclick', 'openPopup()')
+        popupButton.setAttribute('onclick', `clickedProject(${item.id})`); // This assumes you have a function to handle popups
         popupButton.innerText = 'See Project';
-        Tags.appendChild(spanTag);
         cardContent.appendChild(popupButton);
 
         return mainCard;
@@ -200,6 +207,36 @@ function showDynamicproject() {
 function openPopup() {
     const popupWindow = document.querySelector('.popup');
     popupWindow.style.display = 'block';
+}
+
+function clickedProject(projectId) {
+    const heading_section = document.querySelector('.desktop-title');
+    const project_tag = document.querySelector('.popup-tags');
+
+    const project_image = document.querySelector('.main_img');
+    const project_description = document.querySelector('.project-description');
+    projectInfo.forEach((e, i) => {
+        if (projectInfo[i].id === Number(projectId)) {
+            heading_section.innerHTML = projectInfo[i].projectName;
+            if (project_image) {
+                project_image.src = projectInfo[i].img;
+                project_image.alt = projectInfo[i].projectName;
+            }
+            if (project_description) {
+                project_description.innerHTML = projectInfo[i].projectInfo;
+            }
+            if (project_tag) {
+                project_tag.innerHTML = '';
+                projectInfo[i].tech.forEach(tech => {
+                    const tag = document.createElement('span');
+                    tag.classList.add('popup-tag');
+                    tag.innerText = tech;
+                    project_tag.appendChild(tag);
+                })
+            }
+            openPopup();
+        }
+    })
 }
 
 function closePopup() {
