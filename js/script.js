@@ -1,0 +1,258 @@
+const projectInfo = [
+    {
+        id: 1,
+        projectName: 'Todo App to Manage your Tasks',
+        projectInfo:
+            'A daily tracking of privately personalized activities; no accounts or sign-ups required.',
+        tech: ['HTML', 'CSS', 'Javascript'],
+        img: 'assets/images/Snapshot Portfolio.jpg',
+    },
+    {
+        id: 2,
+        projectName: 'Data Dashboard Healthcare',
+        projectInfo:
+            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+        tech: ['HTML', 'Bootstrap', 'Ruby'],
+        img: 'assets/images/center_back.png',
+    },
+    {
+        id: 3,
+        projectName: 'Website Portfolio',
+        projectInfo:
+            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+        tech: ['HTML', 'Bootstrap', 'Ruby'],
+        img: 'assets/images/center_back.png',
+    },
+    {
+        id: 4,
+        projectName: 'Profesional Art Printing Data',
+        projectInfo:
+            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+        tech: ['HTML', 'Bootstrap', 'Ruby'],
+        img: 'projects/center_back.png',
+    },
+    {
+        id: 5,
+        projectName: 'Data Dashboard Healthcare',
+        projectInfo:
+            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+        tech: ['HTML', 'Bootstrap', 'Ruby'],
+        img: 'projects/center_back.png',
+    },
+    {
+        id: 6,
+        projectName: 'Website Portfolio',
+        projectInfo:
+            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
+        tech: ['HTML', 'CSS', 'Ruby'],
+        img: 'projects/center_back.png',
+    },
+];
+
+function mobileMenu() {
+    const hamburger = document.querySelector('.menu-bar');
+    const mobileMenu = document.getElementById('menu-page');
+    const xButton = document.querySelector('.top-x');
+
+    if (mobileMenu.style.display === 'block') {
+        hamburger.style.display = 'block';
+        mobileMenu.style.display = 'none';
+        xButton.style.display = 'none';
+    } else {
+        mobileMenu.style.display = 'block'
+        hamburger.style.display = 'none';
+        xButton.style.display = 'block';
+    }
+}
+
+function showPopup() {
+    const mainPopupDiv = document.createElement('div');
+    mainPopupDiv.classList.add('popup');
+    const secondaryPopupDiv = document.createElement('div');
+    secondaryPopupDiv.classList.add('popup_content');
+    mainPopupDiv.appendChild(secondaryPopupDiv);
+    const imageDiv = document.createElement('div');
+    imageDiv.setAttribute('id', 'popup_img');
+    const close_icon = document.createElement('img');
+    close_icon.setAttribute('class', 'close_button');
+    close_icon.setAttribute('src', '../assets/images/Icon.png');
+    close_icon.setAttribute('onclick', 'closePopup()');
+    const desktop_close_icon = document.createElement('img');
+    desktop_close_icon.setAttribute('class', 'desktop_close_button');
+    desktop_close_icon.setAttribute('src', '../assets/images/desktop_close.png');
+    desktop_close_icon.setAttribute('onclick', 'closePopup()');
+    const img = document.createElement('img');
+    img.setAttribute('src', '../assets/images/Snapshot Portfolio.jpg');
+    img.setAttribute('class', 'main_img');
+    imageDiv.appendChild(close_icon);
+    imageDiv.appendChild(desktop_close_icon);
+    imageDiv.appendChild(img);
+    const titleSection = document.createElement('div');
+    titleSection.classList.add('title-popup');
+    const mainProjectTitle = document.createElement('h2');
+    mainProjectTitle.classList.add('project-title');
+    mainProjectTitle.innerText = "Keeping track of hundreds of components"
+    titleSection.appendChild(mainProjectTitle);
+    secondaryPopupDiv.appendChild(imageDiv);
+    secondaryPopupDiv.appendChild(titleSection);
+
+    // desktop button section
+    const desktopDiv = document.createElement('div');
+    desktopDiv.classList.add('d-title');
+    const desktopTitle = document.createElement('h2');
+    desktopTitle.classList.add('desktop-title');
+    desktopTitle.innerText = "Keeping track of hundreds of components"
+
+    desktopDiv.appendChild(desktopTitle);
+
+    const btnDiv = document.createElement('div');
+    btnDiv.classList.add('d-btns')
+    const liveBtn = document.createElement('button');
+    liveBtn.classList.add('popup-btn');
+    liveBtn.innerText = "See live";
+    const liveIcn = document.createElement('i');
+    liveIcn.classList.add('fas', 'fa-broadcast-tower');
+    liveBtn.appendChild(liveIcn);
+    const sourceBtn = document.createElement('button');
+    sourceBtn.classList.add('popup-btn');
+    sourceBtn.innerText = "See Source";
+    const sourceIcn = document.createElement('i');
+    sourceIcn.classList.add('fab', 'fa-github');
+    sourceBtn.appendChild(sourceIcn);
+    btnDiv.appendChild(liveBtn);
+    btnDiv.appendChild(sourceBtn);
+
+    desktopDiv.appendChild(btnDiv);
+    secondaryPopupDiv.appendChild(desktopDiv);
+
+    const tagsSpan = document.createElement('div');
+    tagsSpan.classList.add('popup-tags');
+    const tag1 = document.createElement('span');
+    tag1.classList.add('popup-tag');
+    tag1.innerText = "JavaScript";
+    const tag2 = document.createElement('span');
+    tag2.classList.add('popup-tag');
+    tag2.innerText = "React";
+    const tag3 = document.createElement('span');
+    tag3.classList.add('popup-tag');
+    tag3.innerText = "Ruby on Rails";
+    tagsSpan.appendChild(tag1);
+    tagsSpan.appendChild(tag2);
+    tagsSpan.appendChild(tag3)
+    secondaryPopupDiv.appendChild(tagsSpan);
+    const description = document.createElement('p');
+    description.classList.add('project-description');
+    description.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s";
+    secondaryPopupDiv.appendChild(description);
+    const buttonDiv = document.createElement('div');
+    buttonDiv.classList.add('popup-btns')
+    const liveButton = document.createElement('button');
+    liveButton.classList.add('popup-btn');
+    liveButton.innerText = "See live";
+    const liveIcon = document.createElement('i');
+    liveIcon.classList.add('fas', 'fa-broadcast-tower');
+    liveButton.appendChild(liveIcon);
+    const sourceButton = document.createElement('button');
+    sourceButton.classList.add('popup-btn');
+    sourceButton.innerText = "See Source";
+    const sourceIcon = document.createElement('i');
+    sourceIcon.classList.add('fab', 'fa-github');
+    sourceButton.appendChild(sourceIcon);
+    buttonDiv.appendChild(liveButton);
+    buttonDiv.appendChild(sourceButton);
+    secondaryPopupDiv.appendChild(buttonDiv);
+    return mainPopupDiv;
+}
+
+function showDynamicproject() {
+    const divDynamic = projectInfo.map((item) => {
+        const mainCard = document.createElement('div');
+        mainCard.classList.add('card');
+        const cardImage = document.createElement('div');
+        cardImage.classList.add('card-image');
+        const img = document.createElement('img');
+        img.src = item.img;
+        img.alt = item.projectName;
+        cardImage.appendChild(img);
+        mainCard.appendChild(cardImage);
+        const cardContent = document.createElement('div');
+        cardContent.classList.add('card-content');
+        mainCard.appendChild(cardImage);
+        mainCard.appendChild(cardContent);
+        const heading = document.createElement('h3');
+        heading.innerText = `${item.projectName}`;
+        cardContent.appendChild(heading);
+        const tags = document.createElement('div');
+        tags.classList.add('tags');
+        item.tech.forEach((tech) => {
+            const spanTag = document.createElement('span');
+            spanTag.classList.add('tag');
+            spanTag.innerText = tech;
+            tags.appendChild(spanTag);
+        });
+        cardContent.appendChild(tags);
+        const popupButton = document.createElement('button');
+        popupButton.setAttribute('class', 'btn');
+        popupButton.setAttribute('type', 'button');
+        popupButton.setAttribute('onclick', `clickedProject(${item.id})`); // This assumes you have a function to handle popups
+        popupButton.innerText = 'See Project';
+        cardContent.appendChild(popupButton);
+
+        return mainCard;
+    })
+
+    return divDynamic;
+}
+
+function openPopup() {
+    const popupWindow = document.querySelector('.popup');
+    popupWindow.style.display = 'block';
+}
+
+function clickedProject(projectId) {
+    const heading_section = document.querySelector('.desktop-title');
+    const project_tag = document.querySelector('.popup-tags');
+
+    const project_image = document.querySelector('.main_img');
+    const project_description = document.querySelector('.project-description');
+    projectInfo.forEach((e, i) => {
+        if (projectInfo[i].id === Number(projectId)) {
+            heading_section.innerHTML = projectInfo[i].projectName;
+            if (project_image) {
+                project_image.src = projectInfo[i].img;
+                project_image.alt = projectInfo[i].projectName;
+            }
+            if (project_description) {
+                project_description.innerHTML = projectInfo[i].projectInfo;
+            }
+            if (project_tag) {
+                project_tag.innerHTML = '';
+                projectInfo[i].tech.forEach(tech => {
+                    const tag = document.createElement('span');
+                    tag.classList.add('popup-tag');
+                    tag.innerText = tech;
+                    project_tag.appendChild(tag);
+                })
+            }
+            openPopup();
+        }
+    })
+}
+
+function closePopup() {
+    const popupWindow = document.querySelector('.popup');
+    popupWindow.style.display = 'none';
+}
+
+window.addEventListener('load', () => {
+    const popupWindowSection = document.getElementById('popWindow');
+    if (popupWindowSection) {
+        popupWindowSection.appendChild(showPopup());
+    }
+
+    // document.querySelector('.card-section').innerHTML = showDynamicproject().join('');
+    const cardSection = document.querySelector('.card-section');
+    if (cardSection) {
+        showDynamicproject().forEach(card => cardSection.appendChild(card));
+    }
+})
