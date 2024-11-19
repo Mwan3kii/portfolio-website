@@ -29,7 +29,7 @@
     font-weight: 700;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 2em;
   }
 
@@ -38,7 +38,7 @@
     font-weight: 700;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .heading-2 {
@@ -46,7 +46,7 @@
     font-weight: 700;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #36B37E;
+    color: #36b37e;
   }
 
   .introduction {
@@ -55,7 +55,7 @@
     text-align: center;
     line-height: 1.5em;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .cover-image {
@@ -91,7 +91,7 @@
     font-weight: 700;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .card-section {
@@ -125,9 +125,8 @@
     font-size: 1.25em;
     font-weight: 600;
     margin: 10px 0;
-    color: #3A4A42;
+    color: #3a4a42;
   }
-
 
   .tags {
     display: flex;
@@ -137,17 +136,17 @@
   }
 
   .tag {
-    background-color: #EBF0EE;
+    background-color: #ebf0ee;
     padding: 6px 7px;
     border-radius: 4px;
     font-size: 10px;
-    color: #3A4A42;
+    color: #3a4a42;
     font-weight: 600;
   }
 
   .btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -157,7 +156,7 @@
   }
 
   .btn:hover {
-    background-color: #36B37F;
+    background-color: #36b37f;
     box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
   }
 
@@ -187,7 +186,7 @@
     font-weight: 700;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 1em;
   }
 
@@ -222,8 +221,8 @@
   }
 
   .resume-btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 2px;
     padding: 18px 20px;
@@ -234,7 +233,7 @@
 
   /* Button hover effect */
   .resume-btn:hover {
-    background-color: #36B37F;
+    background-color: #36b37f;
     box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
   }
 
@@ -258,7 +257,7 @@
   }
 
   .social-icon:hover {
-    color: #36B37F3D;
+    color: #36b37f3D;
   }
 
   .bottom-socials {
@@ -283,7 +282,7 @@
     font-size: 1.9em;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 1em;
     text-align: center;
   }
@@ -304,7 +303,7 @@
     text-align: center;
     font-family: 'Inter', sans-serif;
     margin: 1em;
-    background-color: #EBF0EE;
+    background-color: #ebf0ee;
   }
 
   .bottom-card h2 {
@@ -329,11 +328,11 @@
   }
 
   .b-tag {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 9px 9px;
     border-radius: 8px;
     font-size: 12px;
-    color: #36B37E;
+    color: #36b37e;
     font-weight: 600;
   }
 
@@ -345,7 +344,7 @@
   }
 
   .contact-h3 {
-    color: #172B4D;
+    color: #172b4d;
     font-size: 1.8em;
     font-weight: 700;
     text-align: center;
@@ -367,10 +366,8 @@
   input[type="text"]::placeholder,
   input[type="email"]::placeholder,
   textarea::placeholder {
-    color: #6B778C;
-    /* Light gray color for placeholder text */
+    color: #6b778c;
     font-style: italic;
-    /* Italicize placeholder text */
     font-size: 1.0em;
   }
 
@@ -384,18 +381,14 @@
   input[type="email"]:focus,
   input[type="password"]:focus,
   textarea:focus {
-    color: #172B4D;
-    /* Text color when focused (green text) */
-    /* Green border when focused */
+    color: #172b4d;
     background-color: #e0ffe0;
-    /* Light green background when focused */
     outline: none;
-    /* Removes the default outline */
   }
 
   .submit-btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 2px;
     padding: 18px 60px;
@@ -407,7 +400,7 @@
 
   /* Button hover effect */
   .submit-btn:hover {
-    background-color: #36B37F;
+    background-color: #36b37f;
     box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
   }
 
@@ -480,7 +473,7 @@
     font-size: 2.0em;
     font-weight: 800;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 0.5em;
     padding-bottom: 0.3em;
   }
@@ -492,11 +485,11 @@
   }
 
   .popup-tag {
-    background-color: #EBF0EE;
+    background-color: #ebf0ee;
     padding: 9px 10px;
     border-radius: 4px;
     font-size: 12px;
-    color: #3A4A42;
+    color: #3a4a42;
     font-weight: 600;
   }
 
@@ -504,13 +497,13 @@
     font-size: 1em;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     margin-bottom: 0.5em;
   }
 
   .popup-btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     padding: 9px 15px;
@@ -538,7 +531,7 @@
     width: 70px;
     position: absolute;
     opacity: 0.8;
-    top: 10px;       /* Position from the top of the container */
+    top: 10px;
     left: 10px;
   }
 
@@ -587,7 +580,7 @@
     font-family: inter, sans-serif;
     line-height: 1.25;
     padding-top: 0.9375em;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .heading-1 {
@@ -595,7 +588,7 @@
     font-weight: 900;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 3.5em;
     padding-bottom: 0.5em;
   }
@@ -610,7 +603,7 @@
     font-size: 2.0em;
     letter-spacing: 0.023125em;
     text-align: center;
-    color: #36B37E;
+    color: #36b37e;
     padding-bottom: 0.5em;
   }
 
@@ -619,7 +612,7 @@
     font-weight: 400;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     line-height: 2em;
     width: 700px;
   }
@@ -648,7 +641,7 @@
     font-weight: 900;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 4em;
     padding-bottom: 1em;
   }
@@ -690,7 +683,7 @@
     font-size: 1.25em;
     font-weight: 600;
     margin: 10px 0;
-    color: #3A4A42;
+    color: #3a4a42;
   }
 
 
@@ -702,17 +695,17 @@
   }
 
   .tag {
-    background-color: #EBF0EE;
+    background-color: #ebf0ee;
     padding: 6px 7px;
     border-radius: 4px;
     font-size: 10px;
-    color: #3A4A42;
+    color: #3a4a42;
     font-weight: 600;
   }
 
   .btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     padding: 10px 20px;
@@ -723,7 +716,7 @@
   }
 
   .btn:hover {
-    background-color: #36B37F;
+    background-color: #36b37f;
     box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
   }
 
@@ -756,7 +749,7 @@
     font-weight: 700;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 1em;
   }
 
@@ -793,8 +786,8 @@
   }
 
   .resume-btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 2px;
     padding: 18px 20px;
@@ -806,7 +799,7 @@
 
   /* Button hover effect */
   .resume-btn:hover {
-    background-color: #36B37F;
+    background-color: #36b37f;
     box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
   }
 
@@ -830,7 +823,7 @@
   }
 
   .social-icon:hover {
-    color: #36B37F3D;
+    color: #36b37f3D;
   }
 
   .bottom-sectiom {
@@ -849,7 +842,7 @@
     text-align: center;
     font-family: 'Inter', sans-serif;
     margin: 1em;
-    background-color: #EBF0EE;
+    background-color: #ebf0ee;
   }
 
   .bottom-card h2 {
@@ -874,11 +867,11 @@
   }
 
   .b-tag {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 9px 9px;
     border-radius: 8px;
     font-size: 12px;
-    color: #36B37E;
+    color: #36b37e;
     font-weight: 600;
   }
 
@@ -892,7 +885,7 @@
   }
 
   .contact-h3 {
-    color: #172B4D;
+    color: #172b4d;
     font-size: 1.5em;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
@@ -932,7 +925,7 @@
   input[type="text"]::placeholder,
   input[type="email"]::placeholder,
   textarea::placeholder {
-    color: #6B778C;
+    color: #6b778c;
     /* Light gray color for placeholder text */
     font-style: italic;
     /* Italicize placeholder text */
@@ -949,7 +942,7 @@
   input[type="email"]:focus,
   input[type="password"]:focus,
   textarea:focus {
-    color: #172B4D;
+    color: #172b4d;
     /* Text color when focused (green text) */
     /* Green border when focused */
     background-color: #e0ffe0;
@@ -959,8 +952,8 @@
   }
 
   .submit-btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 2px;
     padding: 15px 50px;
@@ -972,7 +965,7 @@
 
   /* Button hover effect */
   .submit-btn:hover {
-    background-color: #36B37F;
+    background-color: #36b37f;
     box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
   }
 
@@ -1055,7 +1048,7 @@
   }
 
   .icon:hover {
-    color: #36B37F3D;
+    color: #36b37f3D;
   }
 
   .bottom-socials {
@@ -1114,7 +1107,7 @@
     font-size: 2.0em;
     font-weight: 800;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     padding-top: 0.5em;
     padding-bottom: 0.3em;
   }
@@ -1130,11 +1123,11 @@
   }
 
   .popup-tag {
-    background-color: #EBF0EE;
+    background-color: #ebf0ee;
     padding: 9px 10px;
     border-radius: 4px;
     font-size: 12px;
-    color: #3A4A42;
+    color: #3a4a42;
     font-weight: 600;
   }
 
@@ -1142,13 +1135,13 @@
     font-size: 1em;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
-    color: #172B4D;
+    color: #172b4d;
     margin-bottom: 0.5em;
   }
 
   .popup-btn {
-    background-color: #36B37F;
-    color: #FFFFFF;
+    background-color: #36b37f;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     font-size: 15px;
