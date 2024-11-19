@@ -267,8 +267,7 @@
   }
 
   .x-icon {
-    font-size: 1.8em;
-    color: #505f79;
+    display: none;
   }
 
   .top-x {
@@ -374,7 +373,7 @@
   input[type="text"]:hover,
   input[type="email"]:hover,
   textarea:hover {
-    color: #60C095;
+    color: #60c095;
   }
 
   input[type="text"]:focus,
@@ -456,9 +455,11 @@
     top: 10px;
     right: 20px;
   }
+
   #popup_img {
     position: relative;
   }
+
   .desktop_close_button {
     display: none;
   }
@@ -518,10 +519,6 @@
   .popup-btns {
     display: flex;
     gap: 10px;
-  }
-
-  .x-icon {
-    display: none;
   }
 
   .cancel-icon {
@@ -685,7 +682,6 @@
     margin: 10px 0;
     color: #3a4a42;
   }
-
 
   .tags {
     display: flex;
@@ -926,16 +922,14 @@
   input[type="email"]::placeholder,
   textarea::placeholder {
     color: #6b778c;
-    /* Light gray color for placeholder text */
     font-style: italic;
-    /* Italicize placeholder text */
     font-size: 0.9em;
   }
 
   input[type="text"]:hover,
   input[type="email"]:hover,
   textarea:hover {
-    color: #60C095;
+    color: #60c095;
   }
 
   input[type="text"]:focus,
@@ -943,12 +937,8 @@
   input[type="password"]:focus,
   textarea:focus {
     color: #172b4d;
-    /* Text color when focused (green text) */
-    /* Green border when focused */
     background-color: #e0ffe0;
-    /* Light green background when focused */
     outline: none;
-    /* Removes the default outline */
   }
 
   .submit-btn {
@@ -963,7 +953,6 @@
     margin-top: 5px;
   }
 
-  /* Button hover effect */
   .submit-btn:hover {
     background-color: #36b37f;
     box-shadow: 0px 8px 12px rgba(153, 241, 174, 0.5);
