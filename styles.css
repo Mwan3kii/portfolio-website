@@ -236,7 +236,7 @@
     color: #fff;
     border: none;
     border-radius: 2px;
-    padding: 0px 11px 0px 11px;
+    padding: 0 11px 0 11px;
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
