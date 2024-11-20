@@ -244,6 +244,30 @@ function closePopup() {
     popupWindow.style.display = 'none';
 }
 
+function validateForm(event) {
+    const email = document.forms[0].elements.email.value;
+    const res = email.match(/[A-Z]/g);
+    const container = document.querySelector('form .form_validate');
+    let msg = '';
+
+    if (res) {
+        msg = 'Error: Form was not sent! Email characters are incorrect';
+        event.preventDefault();
+    } else {
+        return;
+    }
+
+    container.innerHTML = '';
+
+    const errorSection = document.createElement('h2');
+    errorSection.innerText = msg;
+    container.appendChild(errorSection);
+}
+
+window.onload = () => {
+    document.querySelector('#form_inputs').addEventListener('submit', (event) => validateForm(event));
+}
+
 window.addEventListener('load', () => {
     const popupWindowSection = document.getElementById('popWindow');
     if (popupWindowSection) {
