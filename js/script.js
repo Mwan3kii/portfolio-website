@@ -1,51 +1,27 @@
 const projectInfo = [
     {
         id: 1,
-        projectName: 'Todo App to Manage your Tasks',
+        projectName: 'To do app',
         projectInfo:
-            'A daily tracking of privately personalized activities; no accounts or sign-ups required.',
-        tech: ['HTML', 'CSS', 'Javascript'],
-        img: 'assets/images/Snapshot Portfolio.jpg',
+            "A simple and interactive to-do app built with ReactJS. It features dynamic task management, allowing users to add, edit, delete, and mark tasks as complete. Leveraging React's state management and component architecture, the app ensures a seamless and responsive user experience.",
+        tech: ['HTML', 'CSS', 'ReactJs'],
+        img: 'assets/images/todo.png',
     },
     {
         id: 2,
-        projectName: 'Data Dashboard Healthcare',
+        projectName: 'ProActive Crime Posts',
         projectInfo:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        tech: ['HTML', 'Bootstrap', 'Ruby'],
-        img: 'assets/images/center_back.png',
-    },
-    {
-        id: 3,
-        projectName: 'Website Portfolio',
-        projectInfo:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        tech: ['HTML', 'Bootstrap', 'Ruby'],
-        img: 'assets/images/center_back.png',
+            "Proactive is an anonymous crime reporting platform showcasing my skills as a full-stack developer. Built with Flask for a secure backend and HTML, CSS, and JavaScript for a responsive front end, it ensures user anonymity through encryption and secure data handling. Integrated with SQLAlchemy for efficient database management, it highlights my ability to create user-focused, scalable solutions.",
+        tech: ['HTML', 'CSS', 'Javascript', 'Python', 'Flask'],
+        img: 'assets/images/proactive.png',
     },
     {
         id: 4,
-        projectName: 'Profesional Art Printing Data',
+        projectName: 'BudgetPlan',
         projectInfo:
             "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        tech: ['HTML', 'Bootstrap', 'Ruby'],
-        img: 'projects/center_back.png',
-    },
-    {
-        id: 5,
-        projectName: 'Data Dashboard Healthcare',
-        projectInfo:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        tech: ['HTML', 'Bootstrap', 'Ruby'],
-        img: 'projects/center_back.png',
-    },
-    {
-        id: 6,
-        projectName: 'Website Portfolio',
-        projectInfo:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        tech: ['HTML', 'CSS', 'Ruby'],
-        img: 'projects/center_back.png',
+        tech: ['HTML', 'CSS', 'ReactJs', 'Node.js', 'MySQL', 'Express', 'Bootstrap'],
+        img: 'assets/images/todo.png',
     },
 ];
 
@@ -91,7 +67,7 @@ function showPopup() {
     titleSection.classList.add('title-popup');
     const mainProjectTitle = document.createElement('h2');
     mainProjectTitle.classList.add('project-title');
-    mainProjectTitle.innerText = "Keeping track of hundreds of components"
+    mainProjectTitle.innerText = ""
     titleSection.appendChild(mainProjectTitle);
     secondaryPopupDiv.appendChild(imageDiv);
     secondaryPopupDiv.appendChild(titleSection);
@@ -212,7 +188,7 @@ function openPopup() {
 function clickedProject(projectId) {
     const heading_section = document.querySelector('.desktop-title');
     const project_tag = document.querySelector('.popup-tags');
-
+    const project_title = document.querySelector('.project-title');
     const project_image = document.querySelector('.main_img');
     const project_description = document.querySelector('.project-description');
     projectInfo.forEach((e, i) => {
@@ -224,6 +200,9 @@ function clickedProject(projectId) {
             }
             if (project_description) {
                 project_description.innerHTML = projectInfo[i].projectInfo;
+            }
+            if (project_title) {
+                project_title.innerHTML = projectInfo[i].projectName;
             }
             if (project_tag) {
                 project_tag.innerHTML = '';
