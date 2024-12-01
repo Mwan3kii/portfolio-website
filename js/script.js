@@ -6,6 +6,8 @@ const projectInfo = [
             "A simple and interactive to-do app built with ReactJS. It features dynamic task management, allowing users to add, edit, delete, and mark tasks as complete. Leveraging React's state management and component architecture, the app ensures a seamless and responsive user experience.",
         tech: ['HTML', 'CSS', 'ReactJs'],
         img: 'assets/images/todo.png',
+        liveURL: 'https://todo-app-j36p.onrender.com/',
+        sourceUrl: 'https://github.com/Mwan3kii/todo-app-project',
     },
     {
         id: 2,
@@ -14,15 +16,9 @@ const projectInfo = [
             "Proactive is an anonymous crime reporting platform showcasing my skills as a full-stack developer. Built with Flask for a secure backend and HTML, CSS, and JavaScript for a responsive front end, it ensures user anonymity through encryption and secure data handling. Integrated with SQLAlchemy for efficient database management, it highlights my ability to create user-focused, scalable solutions.",
         tech: ['HTML', 'CSS', 'Javascript', 'Python', 'Flask'],
         img: 'assets/images/proactive.png',
-    },
-    {
-        id: 4,
-        projectName: 'BudgetPlan',
-        projectInfo:
-            "A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.",
-        tech: ['HTML', 'CSS', 'ReactJs', 'Node.js', 'MySQL', 'Express', 'Bootstrap'],
-        img: 'assets/images/todo.png',
-    },
+        liveURL: 'https://proactive-crime-site.onrender.com/',
+        sourceUrl: 'https://github.com/Mwan3kii/ProActive-crime-site',
+    }
 ];
 
 function mobileMenu() {
@@ -84,13 +80,13 @@ function showPopup() {
     const btnDiv = document.createElement('div');
     btnDiv.classList.add('d-btns')
     const liveBtn = document.createElement('button');
-    liveBtn.classList.add('popup-btn');
+    liveBtn.classList.add('live-btn');
     liveBtn.innerText = "See live";
     const liveIcn = document.createElement('i');
     liveIcn.classList.add('fas', 'fa-broadcast-tower');
     liveBtn.appendChild(liveIcn);
     const sourceBtn = document.createElement('button');
-    sourceBtn.classList.add('popup-btn');
+    sourceBtn.classList.add('source-btn');
     sourceBtn.innerText = "See Source";
     const sourceIcn = document.createElement('i');
     sourceIcn.classList.add('fab', 'fa-github');
@@ -123,13 +119,13 @@ function showPopup() {
     const buttonDiv = document.createElement('div');
     buttonDiv.classList.add('popup-btns')
     const liveButton = document.createElement('button');
-    liveButton.classList.add('popup-btn');
+    liveButton.classList.add('live-btn');
     liveButton.innerText = "See live";
     const liveIcon = document.createElement('i');
     liveIcon.classList.add('fas', 'fa-broadcast-tower');
     liveButton.appendChild(liveIcon);
     const sourceButton = document.createElement('button');
-    sourceButton.classList.add('popup-btn');
+    sourceButton.classList.add('source-btn');
     sourceButton.innerText = "See Source";
     const sourceIcon = document.createElement('i');
     sourceIcon.classList.add('fab', 'fa-github');
@@ -191,6 +187,8 @@ function clickedProject(projectId) {
     const project_title = document.querySelector('.project-title');
     const project_image = document.querySelector('.main_img');
     const project_description = document.querySelector('.project-description');
+    const live_project = document.querySelector('.live-btn');
+    const source_project = document.querySelector('.source-btn');
     projectInfo.forEach((e, i) => {
         if (projectInfo[i].id === Number(projectId)) {
             heading_section.innerHTML = projectInfo[i].projectName;
@@ -212,6 +210,20 @@ function clickedProject(projectId) {
                     tag.innerText = tech;
                     project_tag.appendChild(tag);
                 })
+            }
+            if (live_project) {
+                live_project.addEventListener('click', () => {
+                    if (projectInfo[i].liveURL) {
+                        window.open(projectInfo[i].liveURL, '_blank'); // Opens the live project in a new tab
+                    }
+                });
+            }
+            if (source_project) {
+                source_project.addEventListener('click', () => {
+                    if (projectInfo[i].sourceUrl) {
+                        window.open(projectInfo[i].sourceUrl, '_blank'); // Opens the source project in a new tab
+                    }
+                });
             }
             openPopup();
         }
