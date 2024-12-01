@@ -582,6 +582,13 @@
   .project-titlediv {
     text-align: center;
   }
+
+  .medium {
+    background-image: url(/assets/images/medium.png);
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    font-size: 1.5em;
+  }
 }
 
 @media (min-width: 769px) {
@@ -868,6 +875,15 @@
     padding: 0.6em;
     margin-top: 1em;
     color: #505f79;
+    font-size: 1.5em;
+  }
+
+  .medium {
+    background-image: url(/assets/images/medium.png);
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
     font-size: 1.5em;
   }
 
