@@ -213,6 +213,7 @@ function clickedProject(projectId) {
             }
             if (live_project) {
                 live_project.addEventListener('click', () => {
+                    console.log('Button clicked');
                     if (projectInfo[i].liveURL) {
                         window.open(projectInfo[i].liveURL, '_blank'); // Opens the live project in a new tab
                     }

@@ -100,10 +100,6 @@
     width: 84%;
   }
 
-  .indicator {
-    padding-left: 8.5em;
-  }
-
   .card-section {
     display: flex;
     flex-wrap: wrap;
@@ -242,7 +238,7 @@
     color: #fff;
     border: none;
     border-radius: 2px;
-    padding: 0 11px 0 11px;
+    padding: 11px 11px 11px 11px;
     font-size: 15px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -320,7 +316,7 @@
 
   .bottom-card {
     width: 17.75em;
-    height: 60vh;
+    height: 55vh;
     border: 1px solid #ddd;
     border-radius: 0.5em;
     overflow: hidden;
@@ -582,6 +578,10 @@
   .d-title {
     display: none;
   }
+
+  .project-titlediv {
+    text-align: center;
+  }
 }
 
 @media (min-width: 769px) {
@@ -614,8 +614,8 @@
     display: flex;
     justify-content: center;
     list-style-type: none;
-    gap: 0.75em;
-    font-size: 15px;
+    gap: 2em;
+    font-size: 14px;
     font-weight: 600;
     font-family: inter, sans-serif;
     line-height: 1.25;
@@ -623,14 +623,19 @@
     color: #172b4d;
   }
 
+  .desktop-a {
+    text-decoration: none;
+    color: #172b4d;
+  }
+
   .heading-1 {
-    font-size: 2.2em;
-    font-weight: 900;
+    font-size: 2.5em;
+    font-weight: 1000;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #172b4d;
     padding-top: 3.3em;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.3em;
   }
 
   .heading-3 {
@@ -640,7 +645,7 @@
   .heading-2 {
     font-family: Inter, sans-serif;
     font-weight: 900;
-    font-size: 2em;
+    font-size: 2.1em;
     text-align: center;
     color: #36b37e;
     padding-bottom: 0.5em;
