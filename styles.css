@@ -73,7 +73,7 @@
   .down-action {
     display: flex;
     justify-content: center;
-    margin-top: 6.5em;
+    margin-top: 2.5em;
     border: none;
     background-color: white;
   }
@@ -97,7 +97,7 @@
     color: #172b4d;
     padding-bottom: 0.5em;
     padding-left: 1.8em;
-    padding-top: 1.5em;
+    padding-top: 0.5em;
     width: 84%;
   }
 
@@ -109,7 +109,7 @@
 
   .card {
     width: 18.75em;
-    height: 60vh;
+    height: 55vh;
     border: 1px solid #ddd;
     border-radius: 0.5em;
     overflow: hidden;
@@ -200,7 +200,7 @@
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #172b4d;
-    padding-top: 2em;
+    padding-top: 3em;
   }
 
   .about-section p {
@@ -211,6 +211,7 @@
     font-family: 'Inter', sans-serif;
     color: #42526e;
     width: 80%;
+    padding-top: 15px;
   }
 
   .decor1 {
@@ -230,7 +231,7 @@
   }
 
   .bottom-left {
-    bottom: -250px;
+    bottom: -200px;
     left: -10px;
   }
 
@@ -319,7 +320,7 @@
 
   .bottom-card {
     width: 17.75em;
-    height: 55vh;
+    height: 50vh;
     border: 1px solid #ddd;
     border-radius: 0.5em;
     overflow: hidden;

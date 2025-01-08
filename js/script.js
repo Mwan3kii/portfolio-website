@@ -63,10 +63,10 @@ function showPopup() {
     titleSection.classList.add('title-popup');
     const mainProjectTitle = document.createElement('h2');
     mainProjectTitle.classList.add('project-title');
-    mainProjectTitle.innerText = ""
     titleSection.appendChild(mainProjectTitle);
     secondaryPopupDiv.appendChild(imageDiv);
     secondaryPopupDiv.appendChild(titleSection);
+    alert("hii");
 
     // desktop button section
     const desktopDiv = document.createElement('div');
