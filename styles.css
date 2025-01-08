@@ -636,12 +636,12 @@
   }
 
   .heading-1 {
-    font-size: 2.5em;
+    font-size: 2.9em;
     font-weight: 1000;
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #172b4d;
-    padding-top: 3.3em;
+    padding-top: 2.5em;
     padding-bottom: 0.3em;
   }
 
@@ -664,8 +664,8 @@
     text-align: center;
     font-family: 'Inter', sans-serif;
     color: #172b4d;
-    line-height: 2em;
-    width: 700px;
+    line-height: 1.6em;
+    width: 650px;
   }
 
   .cover-image {
@@ -795,9 +795,9 @@
     text-align: center;
     flex-wrap: wrap;
     position: relative;
-    width: 700px;
+    width: 760px;
     height: 50vh;
-    margin-top: 65px;
+    margin-top: 45px;
   }
 
   .about-section h2 {
@@ -837,7 +837,7 @@
   }
 
   .bottom-left {
-    bottom: -10px;
+    bottom: -100px;
     left: -10px;
   }
 
@@ -895,7 +895,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 130px;
   }
 
   .bottom-card {
@@ -1173,6 +1173,7 @@
   .d-title {
     display: flex;
     justify-content: space-between;
+    margin-top: 10px;
   }
 
   .popup-tags {
@@ -1196,6 +1197,8 @@
     font-family: 'Inter', sans-serif;
     color: #172b4d;
     margin-bottom: 0.5em;
+    margin-top: 1em;
+    line-height: 1.4em;
   }
 
   .live-btn {
