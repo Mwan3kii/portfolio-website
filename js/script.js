@@ -47,7 +47,7 @@ function showPopup() {
     imageDiv.setAttribute('id', 'popup_img');
     const close_icon = document.createElement('img');
     close_icon.setAttribute('class', 'close_button');
-    close_icon.setAttribute('src', 'assets/images/Icon.png');
+    close_icon.setAttribute('src', 'assets/images/desktop_close.png');
     close_icon.setAttribute('onclick', 'closePopup()');
     const desktop_close_icon = document.createElement('img');
     desktop_close_icon.setAttribute('class', 'desktop_close_button');
