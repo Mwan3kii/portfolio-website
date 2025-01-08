@@ -38,6 +38,7 @@ function mobileMenu() {
 }
 
 function showPopup() {
+    // desktop version
     const mainPopupDiv = document.createElement('div');
     mainPopupDiv.classList.add('popup');
     const secondaryPopupDiv = document.createElement('div');
@@ -54,7 +55,6 @@ function showPopup() {
     desktop_close_icon.setAttribute('src', '../assets/images/desktop_close.png');
     desktop_close_icon.setAttribute('onclick', 'closePopup()');
     const img = document.createElement('img');
-    img.setAttribute('src', '../assets/images/Snapshot Portfolio.jpg');
     img.setAttribute('class', 'main_img');
     imageDiv.appendChild(close_icon);
     imageDiv.appendChild(desktop_close_icon);
@@ -199,7 +199,6 @@ function clickedProject(projectId) {
             }
             if (live_project) {
                 live_project.addEventListener('click', () => {
-                    console.log('Button clicked');
                     if (projectInfo[i].liveURL) {
                         window.open(projectInfo[i].liveURL, '_blank'); // Opens the live project in a new tab
                     }
@@ -257,4 +256,4 @@ window.addEventListener('load', () => {
     if (cardSection) {
         showDynamicproject().forEach(card => cardSection.appendChild(card));
     }
-})
+});

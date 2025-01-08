@@ -467,7 +467,7 @@
     overflow: auto;
     align-items: center;
     width: 100vw;
-    display: hidden;
+    display: none;
   }
 
   .popup_content {
