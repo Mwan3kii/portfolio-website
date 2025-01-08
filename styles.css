@@ -21,7 +21,7 @@
   }
 
   .heading-1 {
-    font-size: 2.1em;
+    font-size: 2.3em;
     font-weight: 700;
     text-align: center;
     font-family: 'Inter', sans-serif;
@@ -73,7 +73,7 @@
   .down-action {
     display: flex;
     justify-content: center;
-    margin-top: 4em;
+    margin-top: 5em;
     border: none;
     background-color: white;
   }
@@ -211,7 +211,7 @@
     font-family: 'Inter', sans-serif;
     color: #42526e;
     width: 80%;
-    padding-top: 15px;
+    padding-top: 20px;
   }
 
   .decor1 {
@@ -231,7 +231,7 @@
   }
 
   .bottom-left {
-    bottom: -250px;
+    bottom: -290px;
     left: -10px;
   }
 
@@ -263,7 +263,7 @@
     display: flex;
     justify-content: center;
     color: #505f79;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   .social-icon {
@@ -315,7 +315,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 300px;
+    margin-top: 350px;
   }
 
   .bottom-card {
