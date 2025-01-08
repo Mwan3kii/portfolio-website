@@ -66,7 +66,7 @@ function showPopup() {
     titleSection.appendChild(mainProjectTitle);
     secondaryPopupDiv.appendChild(imageDiv);
     secondaryPopupDiv.appendChild(titleSection);
-    alert("hii");
+    
 
     // desktop button section
     const desktopDiv = document.createElement('div');
