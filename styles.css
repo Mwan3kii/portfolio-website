@@ -73,7 +73,7 @@
   .down-action {
     display: flex;
     justify-content: center;
-    margin-top: 5em;
+    margin-top: 8em;
     border: none;
     background-color: white;
   }
@@ -104,6 +104,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 15px;
   }
 
   .card {
@@ -263,7 +264,7 @@
     display: flex;
     justify-content: center;
     color: #505f79;
-    margin-top: 30px;
+    margin-top: 50px;
   }
 
   .social-icon {
@@ -531,7 +532,7 @@
     margin-bottom: 0.5em;
   }
 
-  .live-btn {
+  .live-button {
     background-color: #36b37f;
     color: #fff;
     border: none;
@@ -545,7 +546,7 @@
     display: flex;
   }
 
-  .source-btn {
+  .source-button {
     background-color: #36b37f;
     color: #fff;
     border: none;

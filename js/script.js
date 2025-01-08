@@ -68,7 +68,7 @@ function showPopup() {
     secondaryPopupDiv.appendChild(titleSection);
     
 
-    // desktop button section
+    // desktop version
     const desktopDiv = document.createElement('div');
     desktopDiv.classList.add('d-title');
     const desktopTitle = document.createElement('h2');
@@ -105,13 +105,13 @@ function showPopup() {
     const buttonDiv = document.createElement('div');
     buttonDiv.classList.add('popup-btns')
     const liveButton = document.createElement('button');
-    liveButton.classList.add('live-btn');
+    liveButton.classList.add('live-button');
     liveButton.innerText = "See live";
     const liveIcon = document.createElement('i');
     liveIcon.classList.add('fas', 'fa-broadcast-tower');
     liveButton.appendChild(liveIcon);
     const sourceButton = document.createElement('button');
-    sourceButton.classList.add('source-btn');
+    sourceButton.classList.add('source-button');
     sourceButton.innerText = "See Source";
     const sourceIcon = document.createElement('i');
     sourceIcon.classList.add('fab', 'fa-github');
@@ -175,6 +175,8 @@ function clickedProject(projectId) {
     const project_description = document.querySelector('.project-description');
     const live_project = document.querySelector('.live-btn');
     const source_project = document.querySelector('.source-btn');
+    const mobile_live = document.querySelector('.live-button');
+    const mobile_source = document.querySelector('.source-button');
     projectInfo.forEach((e, i) => {
         if (projectInfo[i].id === Number(projectId)) {
             heading_section.innerHTML = projectInfo[i].projectName;
@@ -206,6 +208,20 @@ function clickedProject(projectId) {
             }
             if (source_project) {
                 source_project.addEventListener('click', () => {
+                    if (projectInfo[i].sourceUrl) {
+                        window.open(projectInfo[i].sourceUrl, '_blank'); // Opens the source project in a new tab
+                    }
+                });
+            }
+            if (mobile_live) {
+                mobile_live.addEventListener('click', () => {
+                    if (projectInfo[i].liveURL) {
+                        window.open(projectInfo[i].liveURL, '_blank'); // Opens the live project in a new tab
+                    }
+                });
+            }
+            if (mobile_source) {
+                mobile_source.addEventListener('click', () => {
                     if (projectInfo[i].sourceUrl) {
                         window.open(projectInfo[i].sourceUrl, '_blank'); // Opens the source project in a new tab
                     }
