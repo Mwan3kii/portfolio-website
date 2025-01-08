@@ -73,8 +73,6 @@ function showPopup() {
     desktopDiv.classList.add('d-title');
     const desktopTitle = document.createElement('h2');
     desktopTitle.classList.add('desktop-title');
-    desktopTitle.innerText = "Keeping track of hundreds of components"
-
     desktopDiv.appendChild(desktopTitle);
 
     const btnDiv = document.createElement('div');
@@ -99,22 +97,10 @@ function showPopup() {
 
     const tagsSpan = document.createElement('div');
     tagsSpan.classList.add('popup-tags');
-    const tag1 = document.createElement('span');
-    tag1.classList.add('popup-tag');
-    tag1.innerText = "JavaScript";
-    const tag2 = document.createElement('span');
-    tag2.classList.add('popup-tag');
-    tag2.innerText = "React";
-    const tag3 = document.createElement('span');
-    tag3.classList.add('popup-tag');
-    tag3.innerText = "Ruby on Rails";
-    tagsSpan.appendChild(tag1);
-    tagsSpan.appendChild(tag2);
-    tagsSpan.appendChild(tag3)
     secondaryPopupDiv.appendChild(tagsSpan);
     const description = document.createElement('p');
     description.classList.add('project-description');
-    description.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s";
+
     secondaryPopupDiv.appendChild(description);
     const buttonDiv = document.createElement('div');
     buttonDiv.classList.add('popup-btns')
