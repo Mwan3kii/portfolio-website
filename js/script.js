@@ -48,11 +48,11 @@ function showPopup() {
     imageDiv.setAttribute('id', 'popup_img');
     const close_icon = document.createElement('img');
     close_icon.setAttribute('class', 'close_button');
-    close_icon.setAttribute('src', 'assets/images/desktop_closebtn.png');
+    close_icon.setAttribute('src', 'assets/images/d_close.png');
     close_icon.setAttribute('onclick', 'closePopup()');
     const desktop_close_icon = document.createElement('img');
     desktop_close_icon.setAttribute('class', 'desktop_close_button');
-    desktop_close_icon.setAttribute('src', '../assets/images/desktop_closebtn.png');
+    desktop_close_icon.setAttribute('src', '../assets/images/d_close.png');
     desktop_close_icon.setAttribute('onclick', 'closePopup()');
     const img = document.createElement('img');
     img.setAttribute('class', 'main_img');
